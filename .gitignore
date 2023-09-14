@@ -30,3 +30,9 @@ build/
 # PDFs
 *.pdf
 *.txt
+
+#compress files 
+*.zip
+*.tgz
+*.rar
+*.7z
