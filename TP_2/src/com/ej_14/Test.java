@@ -12,7 +12,7 @@ public class Test {
                 System.out.println("Plese enter a note between 0 and 10. -1 to exit");
                 note = Double.parseDouble(input.nextLine());
             } while ((note < 0.0 || note > 10.0) && !(note == -1.0));
-            if (note != -1.0) {
+            if ((note < 0.0 || note > 10.0) && !(note == -1.0)) {
                 av.increase(note);
             }
         } while (note != -1.0);

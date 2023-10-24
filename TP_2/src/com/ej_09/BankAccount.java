@@ -44,19 +44,19 @@ public class BankAccount {
         return newCbu;
     }
 
-    public void setCbu(String cbu) {
+    private void setCbu(String cbu) {
         this.cbu = cbu;
     }
 
-    public void setAccountType(AccountType accountType) {
+    private void setAccountType(AccountType accountType) {
         this.accountType = accountType;
     }
 
-    public void setBalance(double balance) {
+    private void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public void setHolder(Person holder) {
+    private void setHolder(Person holder) {
         this.holder = holder;
     }
 

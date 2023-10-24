@@ -67,7 +67,7 @@ public class Card {
         this.maxAccumulatedLimit = saleLimit;
     }
 
-    public double getCurrentCcumulated() {
+    public double getCurrentAcumulated() {
         return currentAcumulated;
     }
 

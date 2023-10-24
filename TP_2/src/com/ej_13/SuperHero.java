@@ -13,6 +13,15 @@ public class SuperHero {
         setSuperPowers(superPowers);
     }
 
+    private int numberBetweenRounding(int num, int lowLimit, int highLimit) {
+        if (num > highLimit) {
+            num = highLimit;
+        } else if (num < lowLimit) {
+            num = lowLimit;
+        }
+        return num;
+    }
+
     public String getName() {
         return name;
     }
@@ -26,13 +35,7 @@ public class SuperHero {
     }
 
     public void setStrength(int strength) {
-        if (strength > 100) {
-            this.strength = 100;
-        } else if (strength < 0) {
-            this.strength = 0;
-        } else {
-            this.strength = strength;
-        }
+        this.strength = numberBetweenRounding(strength, 0, 100);
     }
 
     public int getResistance() {
@@ -40,13 +43,7 @@ public class SuperHero {
     }
 
     public void setResistance(int resistance) {
-        if (resistance > 100) {
-            this.resistance = 100;
-        } else if (resistance < 0) {
-            this.resistance = 0;
-        } else {
-            this.resistance = resistance;
-        }
+        this.resistance = numberBetweenRounding(resistance, 0, 100);
     }
 
     public int getSuperPowers() {
@@ -54,13 +51,7 @@ public class SuperHero {
     }
 
     public void setSuperPowers(int superPowers) {
-        if (superPowers > 100) {
-            this.superPowers = 100;
-        } else if (superPowers < 0) {
-            this.superPowers = 0;
-        } else {
-            this.superPowers = superPowers;
-        }
+        this.superPowers = numberBetweenRounding(superPowers, 0, 100);
     }
 
     public FightResults compete(SuperHero superHero) {

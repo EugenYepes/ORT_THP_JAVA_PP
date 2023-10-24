@@ -14,7 +14,7 @@ public class Person {
     }
 
     public Person(String name, String lastName, int dni, HomeAddress address) {
-        setName(lastName);
+        setName(name);
         setLastName(lastName);
         setDni(dni);
         setAddress(address);
